@@ -16,3 +16,5 @@ services:
       - 443:8888
     volumes:
       - "./jupyter_notebook_config.py:/root/.jupyter/jupyter_notebook_config.py:ro"
+      - "/etc/letsencrypt/live/notebook.easiertechlabs.com/fullchain.pem:/root/fullchain.pem"
+      - "/etc/letsencrypt/live/notebook.easiertechlabs.com/privkey.pem:/root/privkey.pem"
