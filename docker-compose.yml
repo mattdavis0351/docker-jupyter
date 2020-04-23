@@ -9,7 +9,7 @@ services:
   #     - 443:443
   #   links:
   #     - "jupyter"
-  jupyter:
+  jupyter-notebooks:
     image: jupyter/all-spark-notebook
     container_name: jupyter
     ports:
